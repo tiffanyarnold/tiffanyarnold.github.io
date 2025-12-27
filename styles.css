@@ -194,6 +194,18 @@ a {
   font-weight: 600;
 }
 
+#themeBtn {
+  font-size: 1.25rem;
+  padding: 8px 12px;
+  line-height: 1;
+  border-color: transparent;
+}
+
+#themeBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(15deg);
+}
+
 /* Buttons - High Contrast, "SaaS" style */
 .btn {
   display: inline-flex;

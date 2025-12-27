@@ -3,6 +3,13 @@ const STORAGE_KEY = "ta_theme";
 function setTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem(STORAGE_KEY, theme);
+
+    const btn = document.getElementById("themeBtn");
+    if (btn) {
+        // If dark mode, show Sun (to switch to light)
+        // If light mode, show Moon (to switch to dark)
+        btn.textContent = theme === "dark" ? "☀️" : "🌙";
+    }
 }
 
 function getTheme() {
