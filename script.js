@@ -26,7 +26,7 @@ function initTheme() {
 }
 
 function initYear() {
-    document.getElementById("year").textContent = String(new Date().getFullYear());
+    document.getElementById("year").textContent = "2026";
 }
 
 async function initCopyEmail() {
